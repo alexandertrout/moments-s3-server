@@ -1,6 +1,7 @@
 const { imgUpload } = require('../models/imageModels')
 
-exports.postAnImage = (req,res,next) => {
+exports.postAnImage = (req, res, next) => {
+  console.log("here");
 	imgUpload(req, res, ( error ) => {
 		console.log( 'requestOkokok', req.file );
 		if( error ){
