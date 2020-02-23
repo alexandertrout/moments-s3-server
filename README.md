@@ -1,0 +1,1 @@
+POST - /api/images/ - needs to be a file upload with correct headers (can be seen in front end example.)
