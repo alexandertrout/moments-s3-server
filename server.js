@@ -5,7 +5,7 @@ const cors = require("cors");
 const apiRouter = require('./routers/api-router')
 const router = express.Router();
 const app = express();
-const port = process.env.PORT || 5000;
+const { PORT = 9090 } = process.env;
 
 app.use( bodyParser.urlencoded( { extended: false } ) );
 app.use( bodyParser.json() );
@@ -20,6 +20,6 @@ if ( process.env.NODE_ENV === 'production' ) {
 
 //comment
 
-app.listen( port, () => console.log( `Server running on port: ${port}` ) );
+app.listen( PORT, () => console.log( `Server running on port: ${port}` ) );
 
 module.exports = router;
