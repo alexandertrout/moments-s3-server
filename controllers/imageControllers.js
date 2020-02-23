@@ -21,7 +21,7 @@ exports.postAnImage = (req, res, next) => {
 					image: imageName,
 					location: imageLocation
         });
-        axios.patch("https://k8445cuwvd.execute-api.eu-west-2.amazonaws.com/latest/api/photos/Dan", {photos: imageLocation});
+        // axios.patch("https://k8445cuwvd.execute-api.eu-west-2.amazonaws.com/latest/api/photos/Dan", {photos: imageLocation});
 			}
 		}
 	})
