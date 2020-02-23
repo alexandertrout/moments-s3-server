@@ -1,4 +1,5 @@
-const { imgUpload } = require('../models/imageModels')
+const { imgUpload } = require('../models/imageModels');
+const axios = require('axios');
 
 exports.postAnImage = (req, res, next) => {
   console.log("here");
@@ -13,12 +14,14 @@ exports.postAnImage = (req, res, next) => {
 				res.json( 'Error: No File Selected' );
 			} else {
 				const imageName = req.file.key;
-				const imageLocation = req.file.location;
+        const imageLocation = req.file.location;
+        console.log(imageLocation);
 // Save the file name into database into profile model
-				res.json( {
+				res.json({
 					image: imageName,
 					location: imageLocation
-				});
+        });
+        axios.patch("https://k8445cuwvd.execute-api.eu-west-2.amazonaws.com/latest/api/photos/Dan", {photos: imageLocation});
 			}
 		}
 	})
