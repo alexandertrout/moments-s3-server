@@ -20,6 +20,6 @@ if ( process.env.NODE_ENV === 'production' ) {
 
 //comment
 
-app.listen( PORT, () => console.log( `Server running on port: ${port}` ) );
+app.listen( PORT, () => console.log( `Server running on port: ${PORT}` ) );
 
 module.exports = router;
