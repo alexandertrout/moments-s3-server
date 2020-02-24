@@ -4,7 +4,7 @@ const axios = require('axios');
 exports.postAnImage = (req, res, next) => {
   console.log("here");
 	imgUpload(req, res, ( error ) => {
-		console.log( 'requestOkokok', req.file );
+		console.log( 'requestOkokok', req.file, 'Here');
 		if( error ){
 			console.log( 'errors', error );
 			res.json( { error: error } );
