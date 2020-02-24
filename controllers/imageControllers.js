@@ -16,7 +16,6 @@ exports.postAnImage = (req, res, next) => {
 				const imageName = req.file.key;
         const imageLocation = req.file.location;
         console.log(imageLocation);
-// Save the file name into database into profile model
 				res.json({
 					image: imageName,
 					location: imageLocation
