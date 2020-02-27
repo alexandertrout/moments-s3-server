@@ -2,7 +2,6 @@ const aws = require("aws-sdk");
 const multerS3 = require("multer-s3");
 const multer = require("multer");
 const path = require("path");
-const fileFilter = require("../utils/utils");
 
 const S3_BUCKET = process.env.S3_BUCKET;
 
@@ -22,10 +21,7 @@ const postImage = multer({
           path.extname(file.originalname)
       );
     }
-  }),
-  fileFilter: function(req, file, cb) {
-    checkFileType(file, cb);
-  }
+  })
 }).single("profileImage");
 
 module.exports = { postImage };
