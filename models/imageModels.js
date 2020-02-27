@@ -8,7 +8,7 @@ const S3_BUCKET = process.env.S3_BUCKET;
 
 const s3 = new aws.S3();
 
-const imgUpload = multer(
+const postImage = multer(
   {storage: multerS3(
     {
     s3: s3, 
@@ -20,4 +20,4 @@ const imgUpload = multer(
   ).single('profileImage');
 
 
-  module.exports = { imgUpload }
+  module.exports = { postImage }
