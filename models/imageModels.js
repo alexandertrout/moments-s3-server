@@ -2,7 +2,7 @@ const aws = require("aws-sdk");
 const multerS3 = require("multer-s3");
 const multer = require("multer");
 const path = require("path");
-const fileFilter = require(".");
+const fileFilter = require("../utils/utils");
 
 const S3_BUCKET = process.env.S3_BUCKET;
 
