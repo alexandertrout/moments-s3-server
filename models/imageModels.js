@@ -6,7 +6,6 @@ const path = require( 'path' );
 
 const S3_BUCKET = process.env.S3_BUCKET;
 
-// Change these to environment variables
 const s3 = new aws.S3();
 
 const imgUpload = multer(

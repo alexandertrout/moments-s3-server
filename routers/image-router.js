@@ -1,6 +1,7 @@
 const imageRouter = require("express").Router();
-const { postAnImage}  = require("../controllers/imageControllers")
+const { uploadImage}  = require("../controllers/imageControllers")
+const handle405 = require("../errors");
 
-imageRouter.route("/").post(postAnImage);
+imageRouter.route("/").post(uploadImage).all(handle405);
 
 module.exports = imageRouter;

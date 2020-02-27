@@ -1,8 +1,10 @@
 const apiRouter = require("express").Router();
 const imageRouter = require('./image-router');
+const { getAllEndpoints } = require("../controllers/api-controller");
 
 
-apiRouter.get("/", (req, res, next) => res.send({ msg: "Just the first endpoint" }));
-apiRouter.use("/images", imageRouter);
+apiRouter.get("/", getAllEndpoints);
+
+apiRouter.use("/upload", imageRouter);
 
 module.exports = apiRouter;
