@@ -1,7 +1,7 @@
 {
   "name": "react-node-boilerplate",
   "version": "1.0.0",
-  "description": "A React Js and Node Js boilerplate for building a new project. It uses create-react-app",
+  "description": "",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -13,7 +13,6 @@
   "engines": {
     "node": "10.10.0"
   },
-  "author": "Imran Sayed",
   "license": "ISC",
   "dependencies": {
     "aws-sdk": "^2.329.0",
@@ -29,5 +28,19 @@
     "path": "^0.12.7",
     "url": "^0.11.0",
     "validator": "^10.8.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.18.3",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "jest": "^25.1.0",
+    "prettier": "^1.19.1",
+    "supertest": "^4.0.2"
   }
 }
