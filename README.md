@@ -11,7 +11,7 @@ You will need an AWS access_key_id and secret_key.
 Clone this repo and cd into it
 
 ```
-git clone https://github.com/keirbetts/moments-backend/pull/4
+git clone https://github.com/keirbetts/moments-s3-server/pull/4
 cd moments-backend
 ```
 
