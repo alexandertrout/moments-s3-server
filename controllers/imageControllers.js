@@ -1,4 +1,4 @@
-const { postImage } = require("../models/imageModels");
+const { postImage, postReferenceImage } = require("../models/imageModels");
 
 exports.uploadImage = (req, res, next) => {
   return new Promise((resolve, reject) => {

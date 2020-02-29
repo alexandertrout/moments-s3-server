@@ -24,7 +24,6 @@ const postImage = multer({
   })
 }).single("profileImage");
 
-<<<<<<< HEAD
 const postReferenceImage = multer({
   storage: multerS3({
     s3: s3,
@@ -44,6 +43,3 @@ const postReferenceImage = multer({
 }).single("profileImage");
 
 module.exports = { postImage, postReferenceImage };
-=======
-module.exports = { postImage };
->>>>>>> e945707c7bb37a752be7ed9468b4598cd733c71d
