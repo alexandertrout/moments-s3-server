@@ -34,7 +34,7 @@ const postReferenceImage = multer({
         null,
         path.basename("", path.extname(file.originalname)) +
           req.params.username +
-          "-reference" +
+          "-reference-" +
           Date.now() +
           path.extname(file.originalname)
       );
