@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # moments-s3 API
 
 This api accepts an image and sends it to s3 bucket, returning an object with the URL. It is hosted on Heroku.
@@ -67,3 +68,6 @@ location: imageLocation
 - Express.js
 - Multer & Multer.s3
 -
+=======
+POST - /api/images/ - needs to be a file upload with correct headers (can be seen in front end example.)
+>>>>>>> e945707c7bb37a752be7ed9468b4598cd733c71d
