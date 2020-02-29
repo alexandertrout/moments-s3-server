@@ -24,4 +24,22 @@ const postImage = multer({
   })
 }).single("profileImage");
 
-module.exports = { postImage };
+const postReferenceImage = multer({
+  storage: multerS3({
+    s3: s3,
+    bucket: "face-recogonition",
+    acl: "public-read",
+    key: function(req, file, cb) {
+      cb(
+        null,
+        path.basename(file.originalname, path.extname(file.originalname)) +
+          "-" +
+          Date.now() +
+          req.params.username +
+          path.extname(file.originalname)
+      );
+    }
+  })
+}).single("profileImage");
+
+module.exports = { postImage, postReferenceImage };
