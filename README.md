@@ -80,9 +80,13 @@ Please click here for the Hosted database:
 
 ## `Authors`
 
+### `Main contributers`
+
 - **Andrew Falls** - [Afalls89](https://github.com/Afalls89)
 
 - **Humayraa Mulla** - [Hy-M](https://github.com/Hy-M)
+
+### `Secondary contributers`
 
 - **Alexander Trout** - [alexandertrout](https://github.com/alexandertrout)
 
